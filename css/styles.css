@@ -1,0 +1,70 @@
+/* ---------------------------------- */
+/* Global styles used across the site */
+/* ---------------------------------- */
+:root {
+    --theme-black:#000000;
+    --theme-white:#ffffff;
+    --theme-orange:#ff9900;
+}
+
+html {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: var(--theme-black);
+    color: #ffffff;
+}
+
+/* "form reset" */
+/* --> provide consistent base to work from */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+} 
+
+/* CUSTOMIZATIONS */
+.brand {
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.btn-orange {
+    color: var(--theme-orange)  ;
+    border: 0.1rem solid var(--theme-orange);
+    border-radius: 1.5rem;
+}
+
+.btn-orange:hover, 
+.btn-orange:focus
+{
+    background-color: var(--theme-orange);
+    color: var(--theme-black);
+}
+
+/* TODO */
+.row {
+    display: flex;    
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+
