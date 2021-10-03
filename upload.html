@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>WAVE-SHARE</title>
+</head>
+
+<body>
+    <header>
+        <span class="brand">wave-share</span>
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <form action="">
+            <h1>Wave Upload Form</h1>
+            <section>
+                <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                <p>
+                    <label for="fileName">File Name:
+                        <strong><abbr title="required" aria-label="required">*</abbr></strong>
+                    </label>
+                    <input type="text" name="fileName" id="fileName">
+                </p>
+                <p>
+                    <label for="uploaderName">Uploader Name:
+                        <strong><abbr title="required" aria-label="required">*</abbr></strong>
+                    </label>
+                    <input type="text" name="uploaderName" id="uploaderName">
+                </p>
+                <p>
+                    <label for="file" class="input-file">
+                        <span class="input-file-label">
+                            File:
+                            <strong><abbr title="required" aria-label="required">*</abbr></strong>
+                        </span>
+                        <span class="input-file-selection">No file chosen</span>
+                    </label>
+                    <input type="file" name="file" id="file">
+                </p>
+                <p>
+                    <button type="submit" class="btn btn-orange">Upload Wave File!</button>
+                </p>
+            </section>
+        </form>
+    </main>
+
+</body>
+
+</html>

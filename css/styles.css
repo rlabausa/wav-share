@@ -31,6 +31,55 @@ textarea {
   overflow: auto;
 } 
 
+form {
+    border: 0.1rem solid var(--theme-white);
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+ input[type="file"]{
+     /* Make the input field visually hidden to users
+        while also maintaining its visibility to the browser
+        for accessibility purposes (i.e., screen-readers and form-submission)
+     */
+     width: 0.01rem;
+     height: 0.01rem;
+     opacity: 0;
+     overflow: hidden;
+
+
+     /* Remove the input field from the normal document flow 
+        so that it does not disrupt the positioning of sibling elements */
+     position: absolute;
+     z-index: 1;
+}
+
+.input-file{
+    border:0.1rem solid var(--theme-white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.input-file > span {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.input-file > span:first-child {
+    border-radius: inherit;
+}
+
+.input-file > span:last-child:before {
+    content: '|';
+    padding: 0.5rem;
+}
+
+.input-file > span:first-child:hover {
+    background-color: var(--theme-orange);
+    color: var(--theme-black);
+}
+
 /* CUSTOMIZATIONS */
 .brand {
     text-transform: uppercase;
@@ -47,6 +96,7 @@ textarea {
     color: var(--theme-orange)  ;
     border: 0.1rem solid var(--theme-orange);
     border-radius: 1.5rem;
+    background: transparent;
 }
 
 .btn-orange:hover, 
@@ -54,6 +104,7 @@ textarea {
 {
     background-color: var(--theme-orange);
     color: var(--theme-black);
+    cursor: pointer;
 }
 
 /* TODO */
