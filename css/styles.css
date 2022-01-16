@@ -77,7 +77,7 @@ form {
     padding: 0.5rem;
 }
 
-.input-file > span:first-child:hover {
+.input-file:hover{
     background-color: var(--theme-orange);
     color: var(--theme-black);
 }
