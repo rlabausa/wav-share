@@ -66,8 +66,41 @@ function handleFileSelection(event) {
     }
 }
 
+function postData(form) {
+    const xhr = new XMLHttpRequest();
+
+    // Bind the FormData object and the form element
+    const formData = new FormData(form);
+    const payload = JSON.stringify(Object.fromEntries(formData));   
+
+    // Define what happens on successful data submission
+    xhr.addEventListener('load', (event) => {
+        alert(event.target.responseText);
+    });
+
+    // Define what happens in case of error
+    xhr.addEventListener('error', (event) => {
+        alert(`Error: There was a problem submitting the form. ${event.target.responseText}`);
+    })
+
+    // Set up request
+    xhr.open('POST', 'http://localhost:5212/api/audiofiles');
+
+    // Add required headers for API
+    xhr.setRequestHeader('client-correl-id', 'generate');
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    // Add payload to request body
+    xhr.send(payload);
+}
+
 function uploadFile() {
     if (formIsValid()) {
+        const form = document.getElementById('uploadForm');
+
+        postData(form);
+
         console.log('UPLOADED');
     } else {
         console.log('NOT UPLOADED');
