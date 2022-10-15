@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
 
 :root {
-    --theme-black:#000000;
-    --theme-white:#ffffff;
-    --theme-orange:#ff9900;
+    --theme-black: #000000;
+    --theme-white: #ffffff;
+    --theme-orange: #ff9900;
 }
 
 html {
@@ -22,16 +22,16 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  box-sizing: border-box;
-  padding: 0; 
-  margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 textarea {
-  overflow: auto;
-} 
+    overflow: auto;
+}
 
 form {
     border: 0.1rem solid var(--theme-white);
@@ -39,45 +39,45 @@ form {
     padding: 1rem 2rem;
 }
 
- input[type="file"]{
-     /* Make the input field visually hidden to users
+input[type="file"] {
+    /* Make the input field visually hidden to users
         while also maintaining its visibility to the browser
         for accessibility purposes (i.e., screen-readers and form-submission)
      */
-     width: 0.01rem;
-     height: 0.01rem;
-     opacity: 0;
-     overflow: hidden;
+    width: 0.01rem;
+    height: 0.01rem;
+    opacity: 0;
+    overflow: hidden;
 
 
-     /* Remove the input field from the normal document flow 
+    /* Remove the input field from the normal document flow 
         so that it does not disrupt the positioning of sibling elements */
-     position: absolute;
-     z-index: 1;
+    position: absolute;
+    z-index: 1;
 }
 
-.input-file{
-    border:0.1rem solid var(--theme-white);
+.input-file {
+    border: 0.1rem solid var(--theme-white);
     border-radius: 0.5rem;
     cursor: pointer;
     display: block;
 }
 
-.input-file > span {
+.input-file>span {
     display: inline-block;
     padding: 0.5rem;
 }
 
-.input-file > span:first-child {
+.input-file>span:first-child {
     border-radius: inherit;
 }
 
-.input-file > span:last-child:before {
+.input-file>span:last-child:before {
     content: '|';
     padding: 0.5rem;
 }
 
-.input-file:hover{
+.input-file:hover {
     background-color: var(--theme-orange);
     color: var(--theme-black);
 }
@@ -95,15 +95,14 @@ form {
 }
 
 .btn-orange {
-    color: var(--theme-orange)  ;
+    color: var(--theme-orange);
     border: 0.1rem solid var(--theme-orange);
     border-radius: 1.5rem;
     background: transparent;
 }
 
-.btn-orange:hover, 
-.btn-orange:focus
-{
+.btn-orange:hover,
+.btn-orange:focus {
     background-color: var(--theme-orange);
     color: var(--theme-black);
     cursor: pointer;
@@ -119,7 +118,7 @@ form {
 
 /* TODO */
 .row {
-    display: flex;    
+    display: flex;
     flex-direction: row;
 }
 
@@ -127,5 +126,3 @@ form {
     display: flex;
     flex-direction: column;
 }
-
-
