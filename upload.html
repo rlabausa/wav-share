@@ -23,16 +23,16 @@
             <section>
                 <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
                 <p>
-                    <label for="fileName">File Name:
+                    <label for="audioFileName">File Name:
                         <strong><abbr title="required" aria-label="required">*</abbr></strong>
                     </label>
-                    <input type="text" name="fileName" id="fileName">
+                    <input type="text" name="audioFileName" id="audioFileName">
                 </p>
                 <p>
-                    <label for="uploaderName">Uploader Name:
+                    <label for="uploadedBy">Uploader Name:
                         <strong><abbr title="required" aria-label="required">*</abbr></strong>
                     </label>
-                    <input type="text" name="uploaderName" id="uploaderName">
+                    <input type="text" name="uploadedBy" id="uploadedBy">
                 </p>
                 <p>
                     <label for="file" class="input-file">
@@ -43,7 +43,7 @@
                         <span class="input-file-selection">No file chosen</span>
                     </label>
                     <input type="file" name="file" id="file" accept="audio/wav">
-                    <input type="text" name="fileBase64Encoding" id="fileBase64Encoding" hidden>
+                    <input type="text" name="encodedAudio" id="encodedAudio" hidden>
                 </p>
                 <p>
                     <button id="uploadBtn" type="button" class="btn btn-orange">Upload WAV File!</button>

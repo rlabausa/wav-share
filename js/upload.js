@@ -14,9 +14,9 @@ function enableUpload() {
 }
 
 function formIsValid() {
-    const encodedWavFile = document.querySelector('#fileBase64Encoding');
-    const fileNameInput = document.querySelector('#fileName');
-    const uploaderNameInput = document.querySelector('#uploaderName');
+    const encodedWavFile = document.querySelector('#encodedAudio');
+    const fileNameInput = document.querySelector('#audioFileName');
+    const uploaderNameInput = document.querySelector('#uploadedBy');
 
     if (encodedWavFile.value && fileNameInput.value && uploaderNameInput.value) {
         return true;
@@ -41,7 +41,7 @@ function handleFileSelection(event) {
             const DATA_URL_DECLARATION_PATTERN = /^.*\/.*,/
             const base64String = resultString.replace(DATA_URL_DECLARATION_PATTERN, '');
 
-            const encodedWavFile = document.querySelector('#fileBase64Encoding');
+            const encodedWavFile = document.querySelector('#encodedAudio');
             encodedWavFile.value = base64String;
 
             enableUpload();
@@ -110,8 +110,8 @@ function uploadFile() {
 
 window.onload = function () {
     const fileInput = document.querySelector('#file');
-    const fileNameInput = document.querySelector('#fileName');
-    const uploaderNameInput = document.querySelector('#uploaderName');
+    const fileNameInput = document.querySelector('#audioFileName');
+    const uploaderNameInput = document.querySelector('#uploadedBy');
     const uploadBtn = document.querySelector('#uploadBtn');
 
     fileInput.addEventListener('change', handleFileSelection);
