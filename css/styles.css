@@ -121,6 +121,12 @@ a {
     color: #ffffff;
 }
 
+th,
+td {
+    border: 0.1rem solid #ffffff;
+    min-width: 15rem;
+}
+
 /* TODO */
 .row {
     display: flex;
