@@ -8,7 +8,9 @@
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/wav.css">
-    <script defer src="js/wav.js"></script>
+    <link rel="stylesheet" href="css/pagination.css">
+
+    <script src="js/wav.js" defer></script>
     
     <title>WAV-SHARE</title>
 </head>
@@ -30,6 +32,44 @@
         <tbody>
             <!-- Data will be appended here via JS functions -->
         </tbody>
+        <tfoot>
+            <!-- <tr>
+                <td colspan="3">
+                    <button id="prevBtn"> << </button>
+                    <button id="nextBtn"> >> </button>
+                </td>
+            </tr> -->
+            <tr>
+                <td colspan="3">
+                    <nav aria-label="pagination">
+                        <ul class="pagination">
+                            <!-- previous button -->
+                            <li>
+                                <a href="">
+                                    <span aria-hidden="true"> <<  </span>
+                                    <span class="hide-element">previous set of pages</span>
+                                </a>
+                            </li>
+
+                            <!-- pages -->
+                            <!-- TODO: Insert pages via JS -->
+                            <li><a href=""><span class="hide-element">page </span>1</a></li>
+                            <li><a href="" aria-current="page"><span class="hide-element">page </span>2</a></li>
+                            <li><a href=""><span class="hide-element">page </span>3</a></li>
+                            <li><a href=""><span class="hide-element">page </span>4</a></li>
+
+                            <!-- next button -->
+                            <li>
+                                <a href="">
+                                    <span aria-hidden="true"> >>  </span>
+                                    <span class="hide-element">next set of pages</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 

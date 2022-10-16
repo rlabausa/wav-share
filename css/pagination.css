@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination li {
+    margin: 0 0.25rem;
+}
+
+.pagination a[aria-current="page"] {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.1rem;
+    border-radius: 0.15rem;
+}
+
+
+/* snippet from https://www.nomensa.com/blog/how-improve-web-accessibility-hiding-elements */
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    
+    /* Ensures element is there and will be read out by screen reader */
+    clip: rect(1px, 1px, 1px, 1px); 
+    height: 1px;
+
+    /* Any text in the element is moved out of the 1px by 1px box */
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    
+    /* Takes the element out of flow so it doesn't affect surroinding layout (but is also in the right place so screen reader is not impacted) */
+    position: absolute;
+
+    width: 1px; 
+} 
