@@ -24,7 +24,9 @@ nav {
 
 /* snippet from https://www.nomensa.com/blog/how-improve-web-accessibility-hiding-elements */
 .hide-element {
+    /* Setting padding and border to 0 prevents any problem that occurs due to the edges of the clipped area. */
     border: 0;
+    
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     
     /* Ensures element is there and will be read out by screen reader */
