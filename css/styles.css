@@ -121,10 +121,13 @@ a {
     color: #ffffff;
 }
 
+table,
 th,
 td {
-    border: 0.1rem solid #ffffff;
     min-width: 15rem;
+    border: 0.1rem solid #ffffff;
+    border-collapse: collapse;
+    padding: 0.5rem;
 }
 
 /* TODO */
