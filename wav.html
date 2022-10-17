@@ -33,18 +33,12 @@
             <!-- Data will be appended here via JS functions -->
         </tbody>
         <tfoot>
-            <!-- <tr>
-                <td colspan="3">
-                    <button id="prevBtn"> << </button>
-                    <button id="nextBtn"> >> </button>
-                </td>
-            </tr> -->
             <tr>
                 <td colspan="3">
                     <nav aria-label="pagination">
                         <ul class="pagination">
                             <!-- previous button -->
-                            <li>
+                            <li id="prevBtn">
                                 <a href="">
                                     <span aria-hidden="true"> <<  </span>
                                     <span class="hide-element">previous set of pages</span>
@@ -53,13 +47,13 @@
 
                             <!-- pages -->
                             <!-- TODO: Insert pages via JS -->
-                            <li><a href=""><span class="hide-element">page </span>1</a></li>
-                            <li><a href="" aria-current="page"><span class="hide-element">page </span>2</a></li>
-                            <li><a href=""><span class="hide-element">page </span>3</a></li>
-                            <li><a href=""><span class="hide-element">page </span>4</a></li>
+                            <!-- <li class="pageNumber"><a href=""><span class="hide-element">page </span>1</a></li>
+                            <li class="pageNumber"><a href="" aria-current="page"><span class="hide-element">page </span>2</a></li>
+                            <li class="pageNumber"><a href=""><span class="hide-element">page </span>3</a></li>
+                            <li class="pageNumber"><a href=""><span class="hide-element">page </span>4</a></li> -->
 
                             <!-- next button -->
-                            <li>
+                            <li id="nextBtn">
                                 <a href="">
                                     <span aria-hidden="true"> >>  </span>
                                     <span class="hide-element">next set of pages</span>
