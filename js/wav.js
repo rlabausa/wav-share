@@ -122,13 +122,16 @@ function populateTableData(data) {
         const tr = tBody.insertRow();
 
         Object.entries(record)
-            .forEach(([key, value]) => {
-                if (key !== 'audioFileId') {
+            .forEach(([key, val]) => {
                     const td = tr.insertCell();
-                    td.innerText = value;
 
-                    tr.append(td);
+                if (key === 'audioFileId') {
+                    td.hidden = true;
                 }
+
+                td.innerText = val;
+                    tr.append(td);
+
             });
         tBody.append(tr);
     });
