@@ -100,6 +100,10 @@ function getAudioFiles() {
 
             setPageEvent();
 
+            // set current page on initial load
+            const curr = document.querySelector(`ul.pagination li[value='${pageCursor}'] > a`);
+            curr.setAttribute('aria-current', 'page');
+
             populateTableData(data.audioFilesDetails);
 
         });
