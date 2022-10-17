@@ -34,9 +34,7 @@ function removePages() {
     }
 }
 
-function getPage(id, cursor) {
-    console.log(id, cursor);
-
+function getPage(id, cursor) {    
     const prevCursor = pageCursor;
 
     if (id === 'prevBtn') {
