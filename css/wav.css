@@ -7,15 +7,30 @@
     --row-click: hsla(0, 0%, 50%, 0.9);
 }
 
+.row-clicked {
+    background-color: var(--row-click);
+}
 
 #audioFilesDetails {
     margin-top: 2rem;
 }
 
-#audioFilesDetails > tbody > tr:hover {
+#audioFilesDetails>tbody>tr:hover {
     background-color: var(--row-hover);
 }
 
-.row-clicked {
-    background-color: var(--row-click);
+#audioFilesDetails>tbody>tr>td {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
