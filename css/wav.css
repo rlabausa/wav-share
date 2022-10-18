@@ -2,6 +2,20 @@
 /* Styles that apply specifically to our wav.html page           */
 /* ------------------------------------------------------------- */
 
+:root {
+    --row-hover: hsla(0, 0%, 20%, 0.9);
+    --row-click: hsla(0, 0%, 50%, 0.9);
+}
+
+
 #audioFilesDetails {
     margin-top: 2rem;
+}
+
+#audioFilesDetails > tbody > tr:hover {
+    background-color: var(--row-hover);
+}
+
+.row-clicked {
+    background-color: var(--row-click);
 }
