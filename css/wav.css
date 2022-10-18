@@ -34,6 +34,13 @@
     /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+#audioFilesDetails>thead>tr>th, 
+#audioFilesDetails>tbody>tr>td
+{
+    border-left: none;
+    border-right: none;       
+}
+
 #audioPlayerContainer {
     text-align: center;
     padding:0;
