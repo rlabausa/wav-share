@@ -147,6 +147,7 @@ function onRowDoubleClick(event) {
 
     const audioPlayer = document.querySelector('audio');
     const audioSrc = document.querySelector('#audioSrc');
+    const audioLabel = document.querySelector('#audioLabel');
 
     const resource = `${URL}/${id}`;
 
@@ -161,6 +162,7 @@ function onRowDoubleClick(event) {
             const dataUrl = 'data:audio/wav;base64,' + data.encodedAudio;
             audioSrc.src = dataUrl;
 
+            audioLabel.innerText = data.audioFileName;
             audioPlayer.load();
             audioPlayer.play();
         });

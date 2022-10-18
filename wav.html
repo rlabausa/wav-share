@@ -42,7 +42,7 @@
                             <!-- previous button -->
                             <li id="prevBtn">
                                 <a href="">
-                                    <span aria-hidden="true"> << </span>
+                                    <span aria-hidden="true"><< </span>
                                     <span class="hide-element">previous set of pages</span>
                                 </a>
                             </li>
@@ -62,9 +62,14 @@
                 </td>
 
                 <td colspan="3">
-                    <audio controls>
-                        <source id="audioSrc" src="" />
-                    </audio>
+                    <div id="audioPlayerContainer">
+                        <div>
+                            <span id="audioLabel"></span>
+                        </div>
+                        <audio controls>
+                            <source id="audioSrc" src="" />
+                        </audio>
+                    </div>
                 </td>
             </tr>
         </tfoot>
