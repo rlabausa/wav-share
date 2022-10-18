@@ -37,6 +37,14 @@
         <tfoot>
             <tr>
                 <td colspan="3">
+                    <div id="audioPlayerContainer">
+                        <div>
+                            <span id="audioLabel"></span>
+                        </div>
+                        <audio controls>
+                            <source id="audioSrc" src="" />
+                        </audio>
+                    </div>
                     <nav aria-label="pagination">
                         <ul class="pagination">
                             <!-- previous button -->
@@ -61,16 +69,6 @@
                     </nav>
                 </td>
 
-                <td colspan="3">
-                    <div id="audioPlayerContainer">
-                        <div>
-                            <span id="audioLabel"></span>
-                        </div>
-                        <audio controls>
-                            <source id="audioSrc" src="" />
-                        </audio>
-                    </div>
-                </td>
             </tr>
         </tfoot>
     </table>
