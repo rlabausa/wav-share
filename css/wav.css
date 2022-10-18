@@ -36,5 +36,15 @@
 
 #audioPlayerContainer {
     text-align: center;
-    padding: 0.5rem;
+    padding:0;
+    margin:0;
+}
+
+audio {
+    height: 1.5rem;
+    width: 100%;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0.2rem;
 }
